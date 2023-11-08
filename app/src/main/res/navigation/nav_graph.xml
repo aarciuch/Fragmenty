@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/jedenFragment">
+
+    <fragment
+        android:id="@+id/jedenFragment"
+        android:name="art.arc.fragmenty.JedenFragment"
+        android:label="fragment_jeden"
+        tools:layout="@layout/fragment_jeden" >
+        <action
+            android:id="@+id/action_jedenFragment_to_dwaFragment"
+            app:destination="@id/dwaFragment"
+            app:popUpTo="@id/jedenFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/dwaFragment"
+        android:name="art.arc.fragmenty.DwaFragment"
+        android:label="fragment_dwa"
+        tools:layout="@layout/fragment_dwa" >
+        <argument
+            android:name="p1"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="obiekkt"
+            app:argType="art.arc.fragmenty.DaneProgramu" />
+    </fragment>
+</navigation>

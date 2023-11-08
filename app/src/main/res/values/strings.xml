@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fragmenty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment1Name">Fragment1</string>
+    <string name="go2fragment2Text">go2Fragment2</string>
+    <string name="fragment2Text">Fragment2</string>
+    <string name="parametr1">parametr1</string>
+    <string name="parametr2">parametr2</string>
+</resources>

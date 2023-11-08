@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="daneProgramu"
+            type="art.arc.fragmenty.DaneProgramu" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        tools:context=".JedenFragment"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/fragment1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment1Name"
+            style="@style/kontrolkaStyle" />
+
+        <Button
+            android:id="@+id/go2Fragment2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go2fragment2Text"
+            style="@style/kontrolkaStyle" />
+
+        <EditText
+            android:id="@+id/s1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/kontrolkaStyle"
+            android:background="@color/white"
+            android:text="@={daneProgramu.string1}"/>
+
+        <EditText
+            android:id="@+id/s2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/kontrolkaStyle"
+            android:background="@color/white"
+            android:text="@={daneProgramu.string2}"/>
+
+        <TextView
+            android:id="@+id/dlugosciStringow1i2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/kontrolkaStyle"
+            android:background="@color/white"
+            android:text="@{daneProgramu.stringsLengths}"/>
+
+
+    </LinearLayout>
+</layout>
