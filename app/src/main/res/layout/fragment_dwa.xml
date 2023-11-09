@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -26,6 +27,22 @@
             android:layout_height="wrap_content"
             android:text="miejsce na dane"
             style="@style/kontrolkaStyle"/>
+
+        <Button
+            android:id="@+id/wczytanieListyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wczytanie listy"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/kontrolkaStyle"
+            android:background="#FFFFFF00"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="10"/>
+
 
     </LinearLayout>
 </layout>

@@ -21,6 +21,7 @@ class DaneProgramu() : Parcelable {
     fun getString1() : String {
         return this.string1
     }
+
     fun getString2() : String{
         return this.string2
     }

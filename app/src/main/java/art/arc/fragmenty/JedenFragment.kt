@@ -18,11 +18,13 @@ class JedenFragment : Fragment() {
     lateinit var binding: FragmentJedenBinding
     lateinit var daneFragmentu : DaneProgramu
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         daneFragmentu = DaneProgramu()
         daneFragmentu.setString1("Ala")
         daneFragmentu.setString2("Ola")
+
     }
 
     override fun onCreateView(
